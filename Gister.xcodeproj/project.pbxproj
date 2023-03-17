@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		802CA0F529C2FBE100D5178D /* GistListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802CA0F429C2FBE000D5178D /* GistListViewController.swift */; };
+		802CA0F729C2FC7900D5178D /* GistListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802CA0F629C2FC7900D5178D /* GistListPresenter.swift */; };
+		802CA0F929C2FCC200D5178D /* GistListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802CA0F829C2FCC200D5178D /* GistListInteractor.swift */; };
+		802CA0FB29C2FCFD00D5178D /* GistListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802CA0FA29C2FCFD00D5178D /* GistListRouter.swift */; };
+		802CA0FD29C3092000D5178D /* GistListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802CA0FC29C3092000D5178D /* GistListAssembly.swift */; };
 		809BA97F29B9FA9200BFA22F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BA97E29B9FA9200BFA22F /* AppDelegate.swift */; };
 		809BA98129B9FA9200BFA22F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BA98029B9FA9200BFA22F /* SceneDelegate.swift */; };
-		809BA98329B9FA9200BFA22F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809BA98229B9FA9200BFA22F /* ViewController.swift */; };
 		809BA98829B9FA9300BFA22F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 809BA98729B9FA9300BFA22F /* Assets.xcassets */; };
 		809BA98B29B9FA9300BFA22F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 809BA98929B9FA9300BFA22F /* LaunchScreen.storyboard */; };
+		80F2B22829C323DD0073DD72 /* GistsFetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F2B22729C323DD0073DD72 /* GistsFetchService.swift */; };
+		80F2B22B29C324B60073DD72 /* Gist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F2B22A29C324B60073DD72 /* Gist.swift */; };
+		80F2B22E29C3263F0073DD72 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F2B22D29C3263F0073DD72 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		802CA0F429C2FBE000D5178D /* GistListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListViewController.swift; sourceTree = "<group>"; };
+		802CA0F629C2FC7900D5178D /* GistListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListPresenter.swift; sourceTree = "<group>"; };
+		802CA0F829C2FCC200D5178D /* GistListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListInteractor.swift; sourceTree = "<group>"; };
+		802CA0FA29C2FCFD00D5178D /* GistListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListRouter.swift; sourceTree = "<group>"; };
+		802CA0FC29C3092000D5178D /* GistListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListAssembly.swift; sourceTree = "<group>"; };
 		809BA97B29B9FA9200BFA22F /* Gister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		809BA97E29B9FA9200BFA22F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		809BA98029B9FA9200BFA22F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		809BA98229B9FA9200BFA22F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		809BA98729B9FA9300BFA22F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		809BA98A29B9FA9300BFA22F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		809BA98C29B9FA9300BFA22F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80F2B22729C323DD0073DD72 /* GistsFetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsFetchService.swift; sourceTree = "<group>"; };
+		80F2B22A29C324B60073DD72 /* Gist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gist.swift; sourceTree = "<group>"; };
+		80F2B22D29C3263F0073DD72 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		802CA0F229C2FB9700D5178D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				802CA0F329C2FBAB00D5178D /* GistList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		802CA0F329C2FBAB00D5178D /* GistList */ = {
+			isa = PBXGroup;
+			children = (
+				802CA0FC29C3092000D5178D /* GistListAssembly.swift */,
+				802CA0F829C2FCC200D5178D /* GistListInteractor.swift */,
+				802CA0F629C2FC7900D5178D /* GistListPresenter.swift */,
+				802CA0FA29C2FCFD00D5178D /* GistListRouter.swift */,
+				802CA0F429C2FBE000D5178D /* GistListViewController.swift */,
+			);
+			path = GistList;
+			sourceTree = "<group>";
+		};
+		803801DB29C1B461004D864A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				809BA98929B9FA9300BFA22F /* LaunchScreen.storyboard */,
+				809BA98729B9FA9300BFA22F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		803801DC29C1B487004D864A /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				809BA98C29B9FA9300BFA22F /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
 		809BA97229B9FA9200BFA22F = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +107,46 @@
 			children = (
 				809BA97E29B9FA9200BFA22F /* AppDelegate.swift */,
 				809BA98029B9FA9200BFA22F /* SceneDelegate.swift */,
-				809BA98229B9FA9200BFA22F /* ViewController.swift */,
-				809BA98729B9FA9300BFA22F /* Assets.xcassets */,
-				809BA98929B9FA9300BFA22F /* LaunchScreen.storyboard */,
-				809BA98C29B9FA9300BFA22F /* Info.plist */,
+				80F2B22929C324AF0073DD72 /* Models */,
+				803801DB29C1B461004D864A /* Resources */,
+				802CA0F229C2FB9700D5178D /* Scenes */,
+				80F2B22529C323C60073DD72 /* Services */,
+				803801DC29C1B487004D864A /* SupportFiles */,
 			);
 			path = Gister;
+			sourceTree = "<group>";
+		};
+		80F2B22529C323C60073DD72 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				80F2B22629C323D20073DD72 /* GistsFetchService */,
+				80F2B22C29C326390073DD72 /* NetworkService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		80F2B22629C323D20073DD72 /* GistsFetchService */ = {
+			isa = PBXGroup;
+			children = (
+				80F2B22729C323DD0073DD72 /* GistsFetchService.swift */,
+			);
+			path = GistsFetchService;
+			sourceTree = "<group>";
+		};
+		80F2B22929C324AF0073DD72 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				80F2B22A29C324B60073DD72 /* Gist.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		80F2B22C29C326390073DD72 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				80F2B22D29C3263F0073DD72 /* NetworkService.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +233,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\n  swiftlint autocorrect\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint --fix\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -157,9 +242,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				809BA98329B9FA9200BFA22F /* ViewController.swift in Sources */,
+				80F2B22E29C3263F0073DD72 /* NetworkService.swift in Sources */,
 				809BA97F29B9FA9200BFA22F /* AppDelegate.swift in Sources */,
+				802CA0FD29C3092000D5178D /* GistListAssembly.swift in Sources */,
+				80F2B22B29C324B60073DD72 /* Gist.swift in Sources */,
+				802CA0F729C2FC7900D5178D /* GistListPresenter.swift in Sources */,
 				809BA98129B9FA9200BFA22F /* SceneDelegate.swift in Sources */,
+				802CA0FB29C2FCFD00D5178D /* GistListRouter.swift in Sources */,
+				802CA0F529C2FBE100D5178D /* GistListViewController.swift in Sources */,
+				802CA0F929C2FCC200D5178D /* GistListInteractor.swift in Sources */,
+				80F2B22829C323DD0073DD72 /* GistsFetchService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +392,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AUZF4B9TJ6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Gister/Info.plist;
+				INFOPLIST_FILE = Gister/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -331,7 +423,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AUZF4B9TJ6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Gister/Info.plist;
+				INFOPLIST_FILE = Gister/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
